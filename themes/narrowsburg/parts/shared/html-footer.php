@@ -5,9 +5,6 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/instafeed.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/featherlight.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/featherlight.gallery.min.js"></script>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

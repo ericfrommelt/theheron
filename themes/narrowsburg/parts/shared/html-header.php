@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>The Heron Restaurant | 40 Main Street | Narrowsburg, NY</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
@@ -17,8 +17,6 @@
 		    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/grid.css">
 		    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/heron.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/heron-media-queries.css">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/featherlight.css">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/featherlight.gallery.css">
 		    <script type="text/javascript" src="//use.typekit.net/ywi0tsa.js"></script>
 		    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
