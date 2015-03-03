@@ -1,0 +1,907 @@
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* Navigation
+=====================================================================*/
+#heron-nav {
+  background-color: rgba(248, 239, 230, 0.85);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+.nav-wrap {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+#heron-nav li {
+  float: left;
+  font-family: "omnes-pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 20px;
+  margin-top: 12px;
+  letter-spacing: 1px; }
+
+#heron-nav a {
+  color: #004156;
+  text-decoration: none; }
+
+.logo {
+  float: left;
+  padding-right: 10px;
+  margin-top: 10px; }
+
+/* Mobile Navigation
+=====================================================================*/
+#navigation-small {
+  display: block;
+  cursor: pointer; }
+  @media screen and (min-width: 1099px) {
+    #navigation-small {
+      display: none; } }
+
+#menu-wrapper {
+  position: fixed;
+  z-index: 8888;
+  width: 100%;
+  height: 500px;
+  background: #f8efe6;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+
+#menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999; }
+
+.burger {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px 0;
+  background: #201d1b;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.burger-middle.burger-open {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: rgba(32, 29, 27, 0); }
+
+.burger-middle.burger-closed {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #201d1b; }
+
+.burger-top.burger-closed {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  top: 0px; }
+
+.burger-top.burger-open {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 10px; }
+
+.burger-bottom.burger-closed {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  top: 0px; }
+
+.burger-bottom.burger-open {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: -10px; }
+
+.menu-closed {
+  -webkit-transform: translate3d(0, -500px, 0);
+  transform: translate3d(0, -500px, 0); }
+
+.menu-open {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+#navlist-mobile {
+  font-family: "omnes-pro", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6em;
+  padding: 0; }
+  #navlist-mobile a {
+    color: #2f2b28; }
+  #navlist-mobile li {
+    padding: .1em; }
+
+/* Masthead
+=====================================================================*/
+#heron-home {
+  position: relative;
+  min-height: 840px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    #heron-home {
+      min-height: 200px; } }
+  #heron-home h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 300;
+    letter-spacing: .3em;
+    border: 4px solid #004156;
+    display: inline-block;
+    padding: 2px 10px 4px 20px;
+    color: #004156;
+    text-transform: uppercase;
+    background: #f8efe6;
+    background: #f8efe6;
+    background: rgba(248, 239, 230, 0.75); }
+  #heron-home h2 {
+    font-family: "ff-tisa-web-pro", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.5em;
+    letter-spacing: .1em;
+    color: #004156; }
+
+#heron-home::after {
+  content: "";
+  background: url("../img/cover-spring-2014-heron-047.jpg") no-repeat center center fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.masthead {
+  width: auto;
+  position: relative;
+  margin: 200px auto 0 auto;
+  font-family: "omnes-pro", sans-serif; }
+
+.logo-masthead-wide, .logo-masthead {
+  margin: 0 auto; }
+
+.logo-masthead-wide {
+  display: none; }
+
+.heron-title {
+  width: 300px;
+  margin: 40px auto; }
+
+@media screen and (min-width: 1100px) {
+  .logo-masthead {
+    display: none; }
+
+  .logo-masthead-wide {
+    display: block; } }
+@media screen and (max-width: 1099px) {
+  #heron-header {
+    display: none; } }
+#img-break-hours {
+  background: url("../img/cover-spring-2014-heron-043.jpg") no-repeat center center fixed;
+  position: relative;
+  min-height: 840px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    #img-break-hours {
+      min-height: 200px; } }
+
+#img-break-2 {
+  background: url("../img/cover-spring-2014-heron-068.jpg") no-repeat center center fixed;
+  position: relative;
+  min-height: 840px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    #img-break-2 {
+      min-height: 200px; } }
+
+#img-break-3 {
+  background: url("../img/farm.jpg") no-repeat center center fixed;
+  position: relative;
+  min-height: 840px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    #img-break-3 {
+      min-height: 200px; } }
+
+#img-break-4 {
+  background: url("../img/cover-spring-2014-heron-041.jpg") no-repeat center center fixed;
+  position: relative;
+  min-height: 840px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    #img-break-4 {
+      min-height: 200px; } }
+
+#img-break-catering {
+  background: url("../img/cover-spring-2014-heron-072.jpg") no-repeat center center fixed;
+  position: relative;
+  min-height: 840px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    #img-break-catering {
+      min-height: 200px; } }
+
+#img-break-contact {
+  background: url("../img/heronsmall_3.jpg") no-repeat center center fixed;
+  position: relative;
+  min-height: 840px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    #img-break-contact {
+      min-height: 200px; } }
+
+/* News
+=====================================================================*/
+#news {
+  color: #2f2b28;
+  background: #fff;
+  background-image: url("../img/wood_table2.jpg");
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden; }
+  #news h1 {
+    font-family: "corner-store",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 0;
+    color: #04b0cf; }
+    @media only screen and (max-width: 767px) {
+      #news h1 {
+        font-size: 30px; } }
+  #news p, #news li {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    padding-right: 100px; }
+    @media only screen and (max-width: 767px) {
+      #news p, #news li {
+        padding-right: 0; } }
+  #news li {
+    list-style: none; }
+
+.news-wrapper {
+  width: 100%;
+  min-height: 400px;
+  margin: 20px auto;
+  position: relative;
+  background: white;
+  border: 20px solid #2f2b28;
+  padding: 20px;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg); }
+  @media only screen and (max-width: 767px) {
+    .news-wrapper {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      border: none; } }
+
+.news-wrapper:hover {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.news-date {
+  font-family: "omnes-pro", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px !important; }
+
+#news-list {
+  padding-left: 0; }
+
+#news-nav {
+  position: absolute;
+  right: 20px; }
+  @media only screen and (max-width: 767px) {
+    #news-nav {
+      display: none; } }
+
+.news-dot {
+  width: 16px;
+  height: 16px;
+  margin: 1em 0;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #2f2b28; }
+
+.hide-news {
+  display: none; }
+
+.show-news {
+  display: block; }
+
+.news-dot:hover {
+  background: #04b0cf; }
+
+.circle-nav-on {
+  background: #d4c6ab; }
+
+/* Menu
+=====================================================================*/
+#menu, #menu-drinks {
+  position: relative;
+  background: #2f2b28;
+  color: #d4c6ab;
+  padding: 40px 0; }
+  #menu h1, #menu-drinks h1 {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 0px; }
+  #menu h2, #menu-drinks h2 {
+    font-family: "omnes-pro", sans-serif;
+    font-style: normal;
+    font-weight: 300 !important;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 8px; }
+    @media only screen and (max-width: 767px) {
+      #menu h2, #menu-drinks h2 {
+        font-size: 40px; } }
+  #menu h3, #menu-drinks h3 {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    display: block;
+    margin-bottom: 0;
+    color: #f8efe6; }
+  #menu ul, #menu-drinks ul {
+    list-style: none;
+    padding: 0; }
+  #menu li, #menu-drinks li {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2em;
+    font-size: 18px;
+    display: block;
+    padding-right: 20px;
+    margin-bottom: 20px; }
+  #menu p, #menu-drinks p {
+    font-family: "omnes-pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2em;
+    font-size: 18px; }
+  #menu small, #menu-drinks small {
+    display: block;
+    font-style: italic; }
+
+@media only screen and (max-width: 767px) {
+  #menu h1 {
+    display: none; } }
+
+.menu-title-wrapper {
+  position: relative; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .menu-title-wrapper {
+      display: none; } }
+
+#menu small + li {
+  margin-top: 40px; }
+
+.note {
+  font-family: "omnes-pro", sans-serif !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 0 !important; }
+
+.price {
+  font-weight: 700;
+  padding-left: 10px; }
+
+.menu-brunch, .menu-dinner, .menu-drinks {
+  text-align: left; }
+
+.seperator {
+  padding-left: 10px; }
+
+.menu-notes {
+  color: #f8efe6;
+  font-style: italic !important; }
+
+/* Hours
+=====================================================================*/
+#hours {
+  background: #d5c6ab;
+  color: #2f2b28;
+  position: relative;
+  padding-bottom: 100px; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    #hours {
+      padding-bottom: 20px; } }
+  @media only screen and (max-width: 767px) {
+    #hours {
+      padding-bottom: 20px; } }
+  #hours h1 {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 767px) {
+      #hours h1 {
+        font-size: 60px;
+        margin: 0 0 20px 0;
+        text-align: center; } }
+  #hours h2 {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62px;
+    color: #d5c6ab;
+    padding-top: 15px; }
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      #hours h2 {
+        font-size: 30px;
+        padding-top: 12px;
+        margin-top: 0; } }
+    @media only screen and (max-width: 767px) {
+      #hours h2 {
+        font-size: 24px;
+        padding-top: 10px;
+        margin-top: 0; } }
+  #hours ul {
+    padding: 0;
+    margin-top: 0; }
+  #hours li {
+    list-style: none;
+    float: left; }
+  #hours li:nth-child(2) {
+    margin-left: 0; }
+  #hours li:nth-child(8) {
+    margin-right: 0; }
+  @media only screen and (max-width: 959px) {
+    #hours li:nth-child(1) {
+      margin-left: 0; }
+    #hours li:nth-child(7) {
+      margin-right: 0; } }
+  @media only screen and (max-width: 767px) {
+    #hours li:nth-child(1) {
+      margin-left: 0; }
+    #hours li:nth-child(7) {
+      margin-right: 0; } }
+
+.hours-column {
+  width: 124px;
+  margin-left: 18px;
+  margin-right: 18px;
+  text-align: center; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .hours-column {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .hours-column {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+      margin-bottom: 30px; } }
+
+.hours-day {
+  background: #2f2b28;
+  border-radius: 50%;
+  width: 124px;
+  height: 124px; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .hours-day {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 767px) {
+    .hours-day {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto; } }
+
+.the-hours {
+  font-family: "ff-tisa-web-pro", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 30px 0;
+  display: block; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .the-hours {
+      font-size: 24px;
+      margin: 10px 0; } }
+  @media only screen and (max-width: 767px) {
+    .the-hours {
+      font-size: 24px;
+      margin: 10px 0; } }
+
+.hours-season {
+  font-family: "omnes-pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em; }
+
+/* Our Story
+=====================================================================*/
+#our-story {
+  background: #efeede;
+  position: relative;
+  padding-bottom: 100px; }
+  #our-story h1 {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    color: #575054; }
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      #our-story h1 {
+        font-size: 70px; } }
+    @media only screen and (max-width: 767px) {
+      #our-story h1 {
+        font-size: 40px;
+        color: #efeede;
+        border-bottom: 1px solid #36484f;
+        text-align: center;
+        margin-top: -180px;
+        border-bottom: 0;
+        padding-bottom: 140px; } }
+  #our-story p, #our-story blockquote {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #36484f; }
+  @media only screen and (max-width: 767px) {
+    #our-story p {
+      font-size: 18px; } }
+  #our-story blockquote {
+    font-size: 32px;
+    font-style: italic;
+    text-indent: -0.3em;
+    margin-left: -60px; }
+    @media only screen and (max-width: 767px) {
+      #our-story blockquote {
+        font-size: 24px;
+        margin-left: 0; } }
+  #our-story img {
+    margin-top: 50%; }
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      #our-story img {
+        margin-top: 60px;
+        padding-left: 40px; } }
+    @media only screen and (max-width: 767px) {
+      #our-story img {
+        margin-top: 2em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #our-story p {
+    font-size: 18px;
+    padding-right: 20px; } }
+/* Catering
+=====================================================================*/
+.catering-narrow {
+  display: none; }
+
+#catering {
+  background: #ecddb9;
+  position: relative;
+  padding-bottom: 100px; }
+  @media only screen and (max-width: 767px) {
+    #catering {
+      padding-bottom: 20px; } }
+  #catering h1 {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    color: #7b3b31; }
+    #catering h1 h1 {
+      font-size: 60px;
+      padding-bottom: 0;
+      border-bottom: none;
+      text-align: center;
+      margin: 0; }
+  #catering p {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #36484f; }
+  #catering img {
+    width: 100%;
+    margin-top: 100px; }
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      #catering img {
+        margin-top: 200px; } }
+    @media only screen and (max-width: 767px) {
+      #catering img {
+        margin: 0;
+        border: none; } }
+
+@media only screen and (max-width: 767px) {
+  .cater-img2 {
+    display: none; } }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .catering-wide {
+    display: none; }
+
+  .catering-narrow {
+    display: block; } }
+/* Suppliers
+=====================================================================*/
+#suppliers {
+  background: #b7c09e;
+  color: #3a2d28;
+  position: relative;
+  padding-bottom: 100px; }
+  @media only screen and (max-width: 767px) {
+    #suppliers {
+      padding-bottom: 20px; } }
+  #suppliers h1 {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px; }
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      #suppliers h1 {
+        font-size: 60px; } }
+    @media only screen and (max-width: 767px) {
+      #suppliers h1 {
+        font-size: 40px;
+        padding-bottom: 10px;
+        border-bottom: none;
+        text-align: center; } }
+  #suppliers p {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px; }
+  #suppliers ul {
+    margin: 0;
+    padding: 0; }
+  #suppliers li {
+    float: left; }
+  #suppliers a {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #733128;
+    padding: 0 20px 0 0; }
+    @media only screen and (max-width: 767px) {
+      #suppliers a {
+        padding: 0 10px; } }
+  #suppliers img {
+    margin-top: 210px; }
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      #suppliers img {
+        margin-left: 48px; } }
+    @media only screen and (max-width: 767px) {
+      #suppliers img {
+        margin-top: 2em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .supply-hook {
+    margin-left: 10px !important; } }
+
+@media only screen and (max-width: 767px) {
+  .supplier-links {
+    text-align: center; } }
+
+/* Contact Us
+=====================================================================*/
+#contact-us {
+  background: #2f2b28;
+  color: #ebdfd6;
+  position: relative;
+  padding-bottom: 100px; }
+  #contact-us h1 {
+    font-family: "omnes-pro", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-top: 80px; }
+    @media only screen and (max-width: 767px) {
+      #contact-us h1 {
+        font-size: 60px;
+        margin-top: 80px; } }
+  #contact-us h2 {
+    font-family: "omnes-pro", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px; }
+  #contact-us p {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px; }
+    @media only screen and (max-width: 767px) {
+      #contact-us p {
+        font-size: 18px; } }
+  #contact-us a {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #ebdfd6; }
+    @media only screen and (max-width: 767px) {
+      #contact-us a {
+        font-size: 18px; } }
+
+.iframe-rwd {
+  position: relative;
+  padding-bottom: 65.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.iframe-rwd iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.map {
+  margin-top: 80px; }
+
+.social-links-contact {
+  margin-top: 3em; }
+  .social-links-contact h2 {
+    font-size: 1em;
+    letter-spacing: 0 !important; }
+  .social-links-contact ul {
+    padding: 0; }
+  .social-links-contact li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    width: 80px; }
+    @media only screen and (max-width: 767px) {
+      .social-links-contact li {
+        width: 60px; } }
+
+/* PRESS
+=====================================================================*/
+#press {
+  background: #fbf0de;
+  padding-bottom: 100px; }
+  #press ul {
+    padding: 0; }
+  #press li {
+    margin: 0 0 20px 0;
+    text-align: center;
+    display: inline-block;
+    height: 500px;
+    overflow: hidden; }
+  #press li.external {
+    height: 200px; }
+  #press img {
+    max-width: 80%;
+    padding: 10px; }
+  #press h1 {
+    font-family: "ff-tisa-web-pro", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    color: #7b3b31;
+    margin-bottom: 0; }
+  #press h2 {
+    font-family: "omnes-pro", sans-serif;
+    font-weight: 400;
+    color: #2f2b28;
+    font-size: 1em; }
+
+/* INSTAFEED
+=====================================================================*/
+.instafeed-wrapper {
+  position: relative;
+  background: #2f2b28;
+  text-align: center;
+  padding-bottom: 3em; }
+  .instafeed-wrapper h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-family: "ff-tisa-web-pro", serif;
+    font-weight: 400;
+    color: #d4c6ab;
+    font-size: 2em;
+    float: left; }
+  .instafeed-wrapper p {
+    margin: 0 0 3em 0;
+    font-size: 1.2em;
+    font-family: "omnes-pro", sans-serif;
+    color: #d4c6ab; }
+
+#instafeed {
+  position: relative; }
+  #instafeed img {
+    min-width: 140px;
+    margin: 5px;
+    border: 3px solid #f8efe6; }
+
+.highlight {
+  color: #f8efe6;
+  font-family: "ff-tisa-web-pro", serif; }
+
+/*# sourceMappingURL=heron.css.map */

@@ -1,0 +1,11 @@
+# Ignore SASS cache files #
+themes/narrowsburg/.sass-cache/*
+
+# Ignore the upgrade folder #
+upgrade/*
+
+# Ignore the uploads folder #
+uploads/*
+
+# Ignore .DS_Store files
+.DS_Store
