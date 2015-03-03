@@ -61,7 +61,7 @@ html {
   position: fixed;
   z-index: 8888;
   width: 100%;
-  height: 500px;
+  height: 100%;
   background: #f8efe6;
   -moz-transition: -moz-transform 0.4s;
   -o-transition: -o-transform 0.4s;
@@ -125,8 +125,8 @@ html {
   top: -10px; }
 
 .menu-closed {
-  -webkit-transform: translate3d(0, -500px, 0);
-  transform: translate3d(0, -500px, 0); }
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
 
 .menu-open {
   -webkit-transform: translate3d(0, 0, 0);
@@ -224,6 +224,9 @@ html {
   @media only screen and (max-width: 767px) {
     #img-break-hours {
       min-height: 200px; } }
+  @media only screen and (max-width: 768px) {
+    #img-break-hours {
+      display: none; } }
 
 #img-break-2 {
   background: url("../img/cover-spring-2014-heron-068.jpg") no-repeat center center fixed;
@@ -236,6 +239,9 @@ html {
   @media only screen and (max-width: 767px) {
     #img-break-2 {
       min-height: 200px; } }
+  @media only screen and (max-width: 768px) {
+    #img-break-2 {
+      display: none; } }
 
 #img-break-3 {
   background: url("../img/farm.jpg") no-repeat center center fixed;
@@ -248,6 +254,9 @@ html {
   @media only screen and (max-width: 767px) {
     #img-break-3 {
       min-height: 200px; } }
+  @media only screen and (max-width: 768px) {
+    #img-break-3 {
+      display: none; } }
 
 #img-break-4 {
   background: url("../img/cover-spring-2014-heron-041.jpg") no-repeat center center fixed;
@@ -260,6 +269,9 @@ html {
   @media only screen and (max-width: 767px) {
     #img-break-4 {
       min-height: 200px; } }
+  @media only screen and (max-width: 768px) {
+    #img-break-4 {
+      display: none; } }
 
 #img-break-catering {
   background: url("../img/cover-spring-2014-heron-072.jpg") no-repeat center center fixed;
@@ -272,6 +284,9 @@ html {
   @media only screen and (max-width: 767px) {
     #img-break-catering {
       min-height: 200px; } }
+  @media only screen and (max-width: 768px) {
+    #img-break-catering {
+      display: none; } }
 
 #img-break-contact {
   background: url("../img/heronsmall_3.jpg") no-repeat center center fixed;
@@ -284,6 +299,9 @@ html {
   @media only screen and (max-width: 767px) {
     #img-break-contact {
       min-height: 200px; } }
+  @media only screen and (max-width: 768px) {
+    #img-break-contact {
+      display: none; } }
 
 /* News
 =====================================================================*/
@@ -781,7 +799,7 @@ html {
     margin-top: 80px; }
     @media only screen and (max-width: 767px) {
       #contact-us h1 {
-        font-size: 60px;
+        font-size: 24px;
         margin-top: 80px; } }
   #contact-us h2 {
     font-family: "omnes-pro", sans-serif;
@@ -887,6 +905,9 @@ html {
     color: #d4c6ab;
     font-size: 2em;
     float: left; }
+    @media only screen and (max-width: 767px) {
+      .instafeed-wrapper h1 {
+        font-size: 1.5em; } }
   .instafeed-wrapper p {
     margin: 0 0 3em 0;
     font-size: 1.2em;
