@@ -78,8 +78,7 @@
 				<!--Brunch Menu =========================================================-->
 	        	<div class="menu-brunch eight columns alpha">
 	        		<h2>Brunch</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/img/heron-easter-2013-018.jpg"  alt="Heron Easter 2013">
-
+							<img src="http://theheronrestaurant.com/wp-content/uploads/2015/06/IMG_5619.jpg">
 					<?php query_posts( array ( 'post_type' => 'brunch_menu_items', 'posts_per_page' => -1, 'orderby' => 'ASC' ) );
 
 					if ( have_posts() ):
@@ -500,7 +499,18 @@ The Ant Hill Farm, Quails R Us, Silver Heights Farm, Tonjes Farm, 2 Cousins Fish
 							<li><a href="https://twitter.com/TheHeronNY"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-light.png"></a></li>
 							<li><a href="https://www.facebook.com/TheHeronRestaurant"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-light.png"></a></li>
 						</ul>
-					</div>
+						<!--Trip Advisor widget-->
+						<div class="ta-widget">
+							<div id="TA_restaurantWidgetWhite71" class="TA_restaurantWidgetWhite">
+								<ul id="Jk5r8X" class="TA_links YkRRNrc2Z">
+								<li id="EktfjHu" class="HpgYk9q8YL2">
+								<a target="_blank" href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/cdsi/partner/tripadvisor_logo_117x18-24177-2.png" alt="TripAdvisor"/></a>
+								</li>
+								</ul>
+								</div>
+								<script src="http://www.jscache.com/wejs?wtype=restaurantWidgetWhite&amp;uniq=71&amp;locationId=3348484&amp;icon=knifeAndFork&amp;lang=en_US&amp;display_version=2"></script>
+							</div>
+						</div>
 				</div>
 			</div>
 		</section><!--// Contact Us-->

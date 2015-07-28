@@ -857,6 +857,9 @@ html {
       .social-links-contact li {
         width: 60px; } }
 
+.ta-widget {
+  padding: 1em 0 0 .6em; }
+
 /* PRESS
 =====================================================================*/
 #press {
