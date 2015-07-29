@@ -543,7 +543,7 @@ html {
   #hours li {
     list-style: none;
     float: left; }
-  #hours li:nth-child(2) {
+  #hours li:nth-child(1) {
     margin-left: 0; }
   #hours li:nth-child(8) {
     margin-right: 0; }
@@ -560,8 +560,8 @@ html {
 
 .hours-column {
   width: 124px;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 9px;
+  margin-right: 9px;
   text-align: center; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     .hours-column {

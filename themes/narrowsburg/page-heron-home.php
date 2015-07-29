@@ -508,8 +508,7 @@ The Ant Hill Farm, Quails R Us, Silver Heights Farm, Tonjes Farm, 2 Cousins Fish
 								</li>
 								</ul>
 								</div>
-								<script src="http://www.jscache.com/wejs?wtype=restaurantWidgetWhite&amp;uniq=71&amp;locationId=3348484&amp;icon=knifeAndFork&amp;lang=en_US&amp;display_version=2"></script>
-							</div>
+ 							</div>
 						</div>
 				</div>
 			</div>

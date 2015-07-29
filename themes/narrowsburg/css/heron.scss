@@ -582,7 +582,7 @@ $dark-brown: #2f2b28;
 		list-style: none;
 		float:left;
 	}
-	li:nth-child(2) {
+	li:nth-child(1) {
 		margin-left: 0;
 	}
 	li:nth-child(8) {
@@ -609,8 +609,8 @@ $dark-brown: #2f2b28;
 
 .hours-column {
 	width: 124px;
-	margin-left: 18px;
-	margin-right: 18px;
+	margin-left: 9px;
+	margin-right: 9px;
 	text-align: center;
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		width: 100%;
