@@ -344,32 +344,10 @@ html {
   position: relative;
   background: white;
   border: 20px solid #2f2b28;
-  padding: 20px;
-  -moz-transition: -moz-transform 0.4s;
-  -o-transition: -o-transform 0.4s;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -webkit-transform: rotate(-7deg);
-  -moz-transform: rotate(-7deg);
-  -o-transform: rotate(-7deg);
-  transform: rotate(-7deg); }
+  padding: 20px; }
   @media only screen and (max-width: 767px) {
     .news-wrapper {
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
       border: none; } }
-
-.news-wrapper:hover {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg); }
 
 .news-date {
   font-family: "omnes-pro", sans-serif !important;
