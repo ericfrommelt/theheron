@@ -17,6 +17,7 @@
 		    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/grid.css">
 		    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/heron.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/heron-media-queries.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lightbox.css">
 		    <script type="text/javascript" src="//use.typekit.net/ywi0tsa.js"></script>
 		    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>

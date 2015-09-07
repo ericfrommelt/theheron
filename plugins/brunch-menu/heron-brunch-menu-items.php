@@ -29,9 +29,9 @@ function create_brunch_menu_item() {
                 'not_found_in_trash' => 'No Brunch Menu Items found in Trash',
                 'parent' => 'Parent Brunch Menu Item'
             ),
- 
+
             'public' => true,
-            'menu_position' => 4,
+            'menu_position' => 5,
             'supports' => array( 'title' ),
             'has_archive' => true
         )

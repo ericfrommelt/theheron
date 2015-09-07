@@ -29,9 +29,9 @@ function create_hours_entry() {
                 'not_found_in_trash' => 'No Hours Entries found in Trash',
                 'parent' => 'Parent Hours Entry'
             ),
- 
+
             'public' => true,
-            'menu_position' => 4,
+            'menu_position' => 10,
             'supports' => array( 'title' ),
             'has_archive' => true,
 			'show_ui' => true

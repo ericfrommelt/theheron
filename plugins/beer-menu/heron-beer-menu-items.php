@@ -29,9 +29,9 @@ function create_beer_menu_item() {
                 'not_found_in_trash' => 'No Cider & Beer Menu Items found in Trash',
                 'parent' => 'Parent Cider & Beer Menu Item'
             ),
- 
+
             'public' => true,
-            'menu_position' => 5,
+            'menu_position' => 7,
             'supports' => array( 'title' ),
             'has_archive' => true,
 			'show_ui' => true

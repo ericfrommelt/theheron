@@ -29,9 +29,9 @@ function create_press_entry() {
                 'not_found_in_trash' => 'No Press Entries found in Trash',
                 'parent' => 'Parent Press Entry'
             ),
- 
+
             'public' => true,
-            'menu_position' => 4,
+            'menu_position' => 9,
             'supports' => array( 'title' ),
             'has_archive' => true,
 			'show_ui' => true

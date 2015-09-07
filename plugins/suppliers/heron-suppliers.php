@@ -29,9 +29,9 @@ function create_Suppliers_entry() {
                 'not_found_in_trash' => 'No Suppliers Entries found in Trash',
                 'parent' => 'Parent Suppliers Entry'
             ),
- 
+
             'public' => true,
-            'menu_position' => 6,
+            'menu_position' => 12,
             'supports' => array( 'title' ),
             'has_archive' => true,
 			'show_ui' => true

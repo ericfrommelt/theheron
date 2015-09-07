@@ -350,27 +350,28 @@ The Ant Hill Farm, Quails R Us, Silver Heights Farm, Tonjes Farm, 2 Cousins Fish
 		<section id="catering">
 			<div class="container">
 				<div class="catering-wide">
-					<div class="five columns alpha">
-						<h1>Catering</h1>
-						<p>The Heron recognizes that all events are unique.  We strive to ensure that your event reflects your needs & expectations. Sample menus are available upon request; however, knowing the needs of our clients first is the most important aspect in developing a menu for your occasion. Please contact us and tell us about your event.</p>
-					</div>
-					<div class="ten columns offset-by-one omega">
-						<img class="cater-img1" src="<?php echo get_template_directory_uri(); ?>/img/catering.jpg" alt="Catering by The Heron">
-					</div>
-
-				</div>
-
-				<div class="catering-narrow">
-					<div class="five columns offset-by-one">
-						<img class="cater-img1" src="<?php echo get_template_directory_uri(); ?>/img/catering.jpg" alt="Catering by The Heron">
-					</div>
-					<div class="nine columns">
-						<h1>Catering</h1>
-						<p>The Heron recognizes that all events are unique.  We strive to ensure that your event reflects your needs & expectations. Sample menus are available upon request; however, knowing the needs of our clients first is the most important aspect in developing a menu for your occasion. Please contact us and tell us about your event.</p>
+					<div class="catering-background">
+						<div class="sixteen columns">
+								<h1>Catering</h1>
+								<p>The Heron recognizes that all events are unique.  We strive to ensure that your event reflects your needs & expectations. Sample menus are available upon request; however, knowing the needs of our clients first is the most important aspect in developing a menu for your occasion. Please contact us and tell us about your event.</p>
+						</div>
 					</div>
 				</div>
 
-			</div>
+				<!--Gallery-->
+				<div class="catering-gallery sixteen columns alpha">
+					<?php query_posts(array ('post_type' => 'catering_entries', 'posts_per_page' => 1, 'orderby' => 'ASC' ));
+						if (have_posts()):
+								while (have_posts()) : the_post();
+									$images = get_field('catering_images');
+									foreach($images as $image):
+										echo '<div class="thumbnail-wrapper"><div class="catering-thumbnail"><a href="'.$image['url'].'" data-lightbox="catering"><img src='.$image['url'].'></a></div></div>';
+									endforeach;
+								endwhile;
+						endif ?>
+					<div style="clear: both;"></div>
+				</div>
+			</div><!--container-->
 		</section><!--// Catering-->
 
 		<section id="img-break-3"></section>

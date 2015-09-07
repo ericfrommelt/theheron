@@ -29,9 +29,9 @@ function create_wine_menu_item() {
                 'not_found_in_trash' => 'No Wine & Cocktail Menu Items found in Trash',
                 'parent' => 'Parent Wine & Cocktail Menu Item'
             ),
- 
+
             'public' => true,
-            'menu_position' => 4,
+            'menu_position' => 13,
             'supports' => array( 'title' ),
             'has_archive' => true,
 			'show_ui' => true

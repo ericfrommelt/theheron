@@ -716,9 +716,8 @@ $dark-brown: #2f2b28;
 }
 
 #catering {
-	background: #ecddb9;
+	background: #faf7e8;
 	position: relative;
-	padding-bottom: 100px;
 	@media only screen and (max-width: 767px) {
 		padding-bottom: 20px;
 	}
@@ -726,10 +725,15 @@ $dark-brown: #2f2b28;
 		font-family: $font-serif;
 		font-style: normal;
 		font-weight: 400;
-		font-size: 72px;
-		color: #7b3b31;
+		font-size: 60px;
+		color: #cc0234;
+		text-align: center;
+		padding:0 780px 0 10px;
+		@media only screen and (max-width: 1100px) {
+			padding: 0 10px;
+		}
 		h1 {
-			font-size: 60px;
+			font-size: 40px;
 			padding-bottom: 0;
 			border-bottom: none;
 			text-align: center;
@@ -741,18 +745,36 @@ $dark-brown: #2f2b28;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 22px;
-		color: #36484f;
+		color: #004054;
+		text-align: center;
+		padding:0 780px 0 10px;
+		@media only screen and (max-width: 1100px) {
+			padding: 0 10px;
+		}
 	}
 	img {
 		width: 100%;
-		margin-top: 100px;
 		@media only screen and (min-width: 768px) and (max-width: 959px) {
-			margin-top: 200px;
+
 		}
 		@media only screen and (max-width: 767px) {
 			margin: 0;
 			border: none;
 		}
+	}
+}
+
+.catering-background {
+	background: url('../img/catering-background.jpg') no-repeat;
+	position: relative;
+	min-height: 600px;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+ 	background-size: cover;
+	@media only screen and (max-width: 1100px) {
+		min-height: 200px;
+		background: none;
 	}
 }
 
@@ -762,15 +784,50 @@ $dark-brown: #2f2b28;
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-	.catering-wide {
-		display: none;
-	}
+.catering-gallery{
+	margin: 2em 0 2em 0;
+}
 
-	.catering-narrow {
-		display: block;
+.thumbnail-wrapper {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 183px;
+	height: 183px;
+}
+
+.thumbnail-wrapper:hover .catering-thumbnail {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.catering-thumbnail {
+	object-fit: fill;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	@media only screen and (max-width: 767px) {
+		text-align: center;
+		width: 100%;
 	}
 }
+
+
+.catering-thumbnail img {
+	height: 183px;
+	object-fit: cover;
+}
+
+// @media only screen and (min-width: 768px) and (max-width: 959px) {
+// 	.catering-wide {
+// 		display: none;
+// 	}
+//
+// 	.catering-narrow {
+// 		display: block;
+// 	}
+// }
 
 /* Suppliers
 =====================================================================*/
