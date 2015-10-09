@@ -5,7 +5,11 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/instafeed.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.sudoSlider.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/lightbox.js"></script>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

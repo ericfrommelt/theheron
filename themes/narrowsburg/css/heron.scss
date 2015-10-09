@@ -1,4 +1,4 @@
-img { max-width:100%; }
+img { max-width:100% }
 a { text-decoration: none; }
 li { list-style: none; }
 
@@ -343,7 +343,7 @@ $dark-brown: #2f2b28;
 }
 
 .news-wrapper {
-	width: 100%;
+	width: 90%;
 	min-height: 400px;
 	margin: 20px auto;
 	position: relative;
@@ -382,6 +382,13 @@ $dark-brown: #2f2b28;
 	cursor: pointer;
 	border-radius: 50%;
 	background: $dark-brown;
+}
+
+.prevBtn, .nextBtn {
+	font: $font-sans!important;
+	color: $light-blue!important;
+	text-transform: uppercase;
+	font-size: 1em;
 }
 
 .hide-news {

@@ -41,26 +41,20 @@
 				<div class="sixteen columns">
 					<div class="news-wrapper">
 						<h1>Here's the latest...</h1>
-						<div id="news-nav">
-							<div class="news-dot dot-1 circle-nav-on"></div>
-							<div class="news-dot dot-2 circle-nav-off"></div>
-							<div class="news-dot dot-3 circle-nav-off"></div>
-							<div class="news-dot dot-4 circle-nav-off"></div>
-						</div>
-						<ul id="news-list">
-						<?php query_posts( array ( 'post_type' => 'news_entries', 'posts_per_page' => 4, 'orderby' => 'ASC' ) );
+						<div id="slider">
+						<?php query_posts( array ( 'post_type' => 'news_entries', 'posts_per_page' => -1, 'orderby' => 'ASC' ) );
 							if ( have_posts() ):
 								while ( have_posts() ) : the_post();
 									$news_entry = get_field( 'news' );
 									$date = get_the_date();
 									if ( ! empty ( $news_entry ))
-										echo '<li class="news-item hide-news">';
+										echo '<div class="news-item">';
 										echo '<p class="news-date">'.$date.'</p>';
 										echo '<p>'.$news_entry.'</p>';
-										echo '</li>';
+										echo '</div>';
 								endwhile;
 							endif; ?>
-						</ul>
+						</div>
 					</div><!-- //Sixteen Columns-->
 				</div><!-- //News Wrapper-->
 			</div><!-- //Container-->
