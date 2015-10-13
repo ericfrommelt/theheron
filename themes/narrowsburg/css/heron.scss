@@ -839,8 +839,12 @@ $dark-brown: #2f2b28;
 /* Suppliers
 =====================================================================*/
 #suppliers {
-	background: #b7c09e;
-	color: #3a2d28;
+	background: url('../img/sun.jpg') no-repeat;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+ 	background-size: cover;
+	color: #102a4d;
 	position: relative;
 	padding-bottom: 100px;
 	@media only screen and (max-width: 767px) {
@@ -851,6 +855,7 @@ $dark-brown: #2f2b28;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 72px;
+
 		@media only screen and (min-width: 768px) and (max-width: 959px) {
 			font-size: 60px;
 		}
@@ -872,17 +877,30 @@ $dark-brown: #2f2b28;
 		padding: 0;
 	}
 	li {
-		float: left;
+		display: inline-block;
+	}
+	li::after {
+		content: "\2605";
+
+		@media only screen and (max-width: 767px) {
+			color: $tan-light;
+		}
+	}
+	li:last-child::after {
+		content: "";
 	}
 	a {
 		font-family: $font-serif;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 22px;
-		color:#733128;
-		padding:0 20px 0 0;
+		color: #102a4d;
+		padding: 0 1em;
+
+		// padding:0 20px 0 0;
 		@media only screen and (max-width: 767px) {
 			padding:0 10px;
+			color: $tan-light;
 		}
 	}
 	img {
@@ -896,6 +914,9 @@ $dark-brown: #2f2b28;
 	}
 }
 
+.suppliers-content {
+	text-align: center;
+}
 .supply-hook {
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		margin-left: 10px!important;

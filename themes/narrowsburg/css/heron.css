@@ -750,8 +750,12 @@ html {
 /* Suppliers
 =====================================================================*/
 #suppliers {
-  background: #b7c09e;
-  color: #3a2d28;
+  background: url("../img/sun.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #102a4d;
   position: relative;
   padding-bottom: 100px; }
   @media only screen and (max-width: 767px) {
@@ -780,17 +784,25 @@ html {
     margin: 0;
     padding: 0; }
   #suppliers li {
-    float: left; }
+    display: inline-block; }
+  #suppliers li::after {
+    content: "\2605"; }
+    @media only screen and (max-width: 767px) {
+      #suppliers li::after {
+        color: #f8efe6; } }
+  #suppliers li:last-child::after {
+    content: ""; }
   #suppliers a {
     font-family: "ff-tisa-web-pro", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    color: #733128;
-    padding: 0 20px 0 0; }
+    color: #102a4d;
+    padding: 0 1em; }
     @media only screen and (max-width: 767px) {
       #suppliers a {
-        padding: 0 10px; } }
+        padding: 0 10px;
+        color: #f8efe6; } }
   #suppliers img {
     margin-top: 210px; }
     @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -799,6 +811,9 @@ html {
     @media only screen and (max-width: 767px) {
       #suppliers img {
         margin-top: 2em; } }
+
+.suppliers-content {
+  text-align: center; }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .supply-hook {

@@ -373,20 +373,20 @@ The Ant Hill Farm, Quails R Us, Silver Heights Farm, Tonjes Farm, 2 Cousins Fish
 		<!--Suppliers-->
 		<section id="suppliers">
 			<div class="container">
-				<div class="five columns alpha supply-hook">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/suppliers.jpg" alt="Suppliers">
-				</div>
-				<div class="nine columns offset-by-one">
+				<div class="sixteen columns suppliers-content">
 					<h1>Our Suppliers</h1>
-					<p>We are so proud to be working with the local farmers and artisan producers here in the Upper Delaware region. We've had the opportunity to meet so many great people, visit some farms and feature all of the top-quality products that they provide us. Being a small business, we know how important local economies are to a community. Each time you visit our restaurant, we like to think that you aren't just supporting us, but you're supporting a wider group of local farms and artisan producers as well. So who are all of these great folks? Take a look below to check see who are the 'Roots & Marrow' of what we do.</p>
+					<!-- <p>We are so proud to be working with the local farmers and artisan producers here in the Upper Delaware region. We've had the opportunity to meet so many great people, visit some farms and feature all of the top-quality products that they provide us. Being a small business, we know how important local economies are to a community. Each time you visit our restaurant, we like to think that you aren't just supporting us, but you're supporting a wider group of local farms and artisan producers as well. So who are all of these great folks? Take a look below to check see who are the 'Roots & Marrow' of what we do.</p> -->
 
 					<?php query_posts( array ( 'post_type' => 'suppliers_entries', 'posts_per_page' => 1, 'orderby' => 'ASC' ) );
 
 						if ( have_posts() ):
 
-						echo '<ul class="supplier-links">';
 							while ( have_posts() ) : the_post();
-
+							echo '<ul class="supplier-links">';
+								if( get_field('supplier_copy')) {
+									$supplier_copy = get_field('supplier_copy');
+									echo '<p>'.$supplier_copy.'</p>';
+								}
 								/* Loop through a Repeater field */
 
 								if( get_field('supplier_links') )
@@ -401,9 +401,9 @@ The Ant Hill Farm, Quails R Us, Silver Heights Farm, Tonjes Farm, 2 Cousins Fish
 									}
 								}
 
+							echo '</ul>';
 							endwhile;
 
-						echo '</ul>';
 
 						endif; ?>
 				</div>
