@@ -757,7 +757,8 @@ html {
   background-size: cover;
   color: #102a4d;
   position: relative;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  min-height: 1000px; }
   @media only screen and (max-width: 767px) {
     #suppliers {
       padding-bottom: 20px; } }

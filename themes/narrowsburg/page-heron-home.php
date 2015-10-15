@@ -368,8 +368,6 @@ The Ant Hill Farm, Quails R Us, Silver Heights Farm, Tonjes Farm, 2 Cousins Fish
 			</div><!--container-->
 		</section><!--// Catering-->
 
-		<section id="img-break-3"></section>
-
 		<!--Suppliers-->
 		<section id="suppliers">
 			<div class="container">
