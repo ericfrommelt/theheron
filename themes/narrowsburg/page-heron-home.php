@@ -481,9 +481,18 @@ The Ant Hill Farm, Quails R Us, Silver Heights Farm, Tonjes Farm, 2 Cousins Fish
 					</div>
 				</div>
 				<div class="nine columns offset-by-one">
-					<h1>For reservations and inquiries</h1>
-					<p>40 Main street,<br>Narrowsburg, Ny 12764<br>(845) 252-3333</p>
-					<a href="mailto:theheronrestaurant@gmail.com">theheronrestaurant@gmail.com</a>
+
+					<?php query_posts(array ('post_type' => 'contact_entries', 'posts_per_page' => 1, 'orderby' => 'ASC' ));
+						if (have_posts()):
+								while (have_posts()) : the_post();
+									$contact_copy = get_field('contact_copy');
+									$contact_info = get_field('contact_info');
+									$contact_email = get_field('contact_email');
+									echo '<h1>'.$contact_copy.'</h1>';
+									echo '<p>'.$contact_info.'</p>';
+									echo $contact_email;
+								endwhile;
+						endif ?>
 
 					<div class="social-links-contact">
 						<h2>Follow us on</h2>
@@ -494,14 +503,14 @@ The Ant Hill Farm, Quails R Us, Silver Heights Farm, Tonjes Farm, 2 Cousins Fish
 						</ul>
 						<!--Trip Advisor widget-->
 						<div class="ta-widget">
-							<div id="TA_restaurantWidgetWhite71" class="TA_restaurantWidgetWhite">
-								<ul id="Jk5r8X" class="TA_links YkRRNrc2Z">
-								<li id="EktfjHu" class="HpgYk9q8YL2">
+							<div id="TA_restaurantWidgetGreen656" class="TA_restaurantWidgetGreen">
+								<ul id="q1YRfatS" class="TA_links xIN9MVs0v">
+								<li id="Aq7TUzOEr" class="2yjIU6qpw0T1">
 								<a target="_blank" href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/cdsi/partner/tripadvisor_logo_117x18-24177-2.png" alt="TripAdvisor"/></a>
 								</li>
 								</ul>
 								</div>
- 							</div>
+								<script src="http://www.jscache.com/wejs?wtype=restaurantWidgetGreen&amp;uniq=656&amp;locationId=3348484&amp;icon=knifeAndFork&amp;lang=en_US&amp;display_version=2"></script>
 						</div>
 				</div>
 			</div>
